@@ -65,7 +65,7 @@ int isQueueFull(OrderQueue* queue) {
     return (queue->count == MAX_ORDERS);
 }
 
-// Enqueue a new order
+
 void enqueueOrder(OrderQueue* queue, Order newOrder) {
     if (isQueueFull(queue)) {
         printf("Order queue is full. Cannot accept new orders.\n");
@@ -77,7 +77,7 @@ void enqueueOrder(OrderQueue* queue, Order newOrder) {
     queue->count++;
 }
 
-// Dequeue an order
+
 Order dequeueOrder(OrderQueue* queue) {
     Order dequeuedOrder;
 
@@ -94,7 +94,7 @@ Order dequeueOrder(OrderQueue* queue) {
     return dequeuedOrder;
 }
 
-// Display the details of an order
+
 void displayOrder(Order order) {
     printf("Order Number: %d\n", order.orderNumber);
     printf("Customer Name: %s\n", order.customerName);
