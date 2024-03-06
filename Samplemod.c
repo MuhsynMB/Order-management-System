@@ -15,7 +15,7 @@ typedef struct {
     int isPaid;
 } Order;
 
-// Structure to represent a queue of orders
+
 typedef struct {
     Order orders[MAX_ORDERS];
     int front;
