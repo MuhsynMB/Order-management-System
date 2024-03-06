@@ -6,7 +6,7 @@
 #define MAX_USERS 10
 #define MAX_FOODS 5
 
-// Structure to represent an order
+
 typedef struct {
     int orderNumber;
     char customerName[50];
