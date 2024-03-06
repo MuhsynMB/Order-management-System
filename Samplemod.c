@@ -193,7 +193,7 @@ int login(User* users, int totalUsers) {
     return 0;
 }
 
-// Confirm payment for an order
+
 void confirmPayment(OrderQueue* queue, int orderNumber) {
     int i;
     for (i = 0; i < queue->count; i++) {
@@ -207,7 +207,7 @@ void confirmPayment(OrderQueue* queue, int orderNumber) {
     printf("valid order number. Payment confirmation success.\n\n");
 }
 
-// Process the next order in the queue
+
 void processNextOrder(OrderQueue* queue) {
     if (isQueueEmpty(queue)) {
         printf("No more orders in the queue.\n");
@@ -220,7 +220,7 @@ void processNextOrder(OrderQueue* queue) {
 }
 
 int main() {
-    // Sample menu
+    
     FoodItem menu[MAX_FOODS] = {
         {"Burger", 5.99},
         {"Pizza", 9.99},
@@ -231,9 +231,9 @@ int main() {
 
     // Sample users
     User users[MAX_USERS] = {
-        {"admin", "admin123"},
-        {"user1", "pass123"},
-        {"user2", "pass456"}
+        {"awatif", "admin123"},
+        {"muhidin", "admin123"},
+        {"muhsin", "admin123"}
     };
 
     OrderQueue orderQueue;
