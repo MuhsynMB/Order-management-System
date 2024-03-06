@@ -138,7 +138,7 @@ void placeOrder(OrderQueue* queue, FoodItem* menu, int menuSize) {
     printf("Order placed successfully!\n\n");
 }
 
-// Process orders in the queue
+
 void processOrders(OrderQueue* queue) {
     int choice;
     Order processedOrder;
@@ -172,7 +172,7 @@ void processOrders(OrderQueue* queue) {
     printf("No more orders in the queue.\n");
 }
 
-// User login
+
 int login(User* users, int totalUsers) {
     char username[50];
     char password[50];
