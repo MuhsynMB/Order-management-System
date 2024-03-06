@@ -35,7 +35,7 @@ typedef struct {
     float itemPrice;
 } FoodItem;
 
-// Function prototypes
+
 void initializeQueue(OrderQueue* queue);
 int isQueueEmpty(OrderQueue* queue);
 int isQueueFull(OrderQueue* queue);
@@ -48,14 +48,14 @@ int login(User* users, int totalUsers);
 void confirmPayment(OrderQueue* queue, int orderNumber);
 void processNextOrder(OrderQueue* queue);
 
-// Initialize the order queue
+
 void initializeQueue(OrderQueue* queue) {
     queue->front = 0;
     queue->rear = -1;
     queue->count = 0;
 }
 
-// Check if the order queue is empty
+
 int isQueueEmpty(OrderQueue* queue) {
     return (queue->count == 0);
 }
